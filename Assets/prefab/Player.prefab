@@ -2194,6 +2194,8 @@ MonoBehaviour:
   velocidade: 5
   rotateSpeed: 30
   animator: {fileID: 4358663794545463307}
+  forcaPulo: 1.5
+  gravidade: -9.81
 --- !u!143 &7971165389167120718
 CharacterController:
   m_ObjectHideFlags: 0
