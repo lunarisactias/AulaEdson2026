@@ -10,10 +10,19 @@ public class MovimentoController : NetworkBehaviour
     public float rotateSpeed = 150f; 
     public Animator animator;
 
+
     [Header("Configurações de Pulo e Gravidade")]
     public float forcaPulo = 1.5f; 
     public float gravidade = -9.81f;
     private float velocidadeVertical; 
+
+    [Networked] public int Score { get; set; }
+
+    [Rpc(RpcSources.All, RpcTargets.StateAuthority)]
+    public void RPC_AddScore(int points)
+    {
+        Score += points;
+    }
 
     public void Awake()
     {

@@ -2087,13 +2087,12 @@ GameObject:
   - component: {fileID: 1604835806066744882}
   - component: {fileID: 1708384018270659036}
   - component: {fileID: 3326073423312258014}
-  - component: {fileID: 6675011367403656667}
   - component: {fileID: 198182928410365195}
   - component: {fileID: 4746035973512258484}
   - component: {fileID: 7971165389167120718}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2153,19 +2152,6 @@ MonoBehaviour:
   SyncParent: 0
   _autoAOIOverride: 1
   DisableSharedModeInterpolation: 0
---- !u!114 &6675011367403656667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5844898149055082757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c36d6957bd35ef4a974a9baf3d8ae6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemsCollected: 0
 --- !u!114 &198182928410365195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2192,10 +2178,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  rotateSpeed: 30
+  rotateSpeed: 100
   animator: {fileID: 4358663794545463307}
   forcaPulo: 1.5
   gravidade: -9.81
+  _Score: 0
 --- !u!143 &7971165389167120718
 CharacterController:
   m_ObjectHideFlags: 0
